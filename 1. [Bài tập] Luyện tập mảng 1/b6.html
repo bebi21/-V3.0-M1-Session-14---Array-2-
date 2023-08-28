@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Bài 6: Viết chương trình khởi tạo nhập vào một mảng số nguyên gồm 10 phần tử. Nhập phần tử số nguyên và tìm xem số đó có nằm trong mảng số nguyên không? Nếu có thuộc mảng số nguyên thì in ra "Number X is in the array" còn lại in ra "Number X is not in the array". -->
+    <script>
+      // let number = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+
+      // let check;
+
+      // for (let i = 0; i < number.length; i++) {
+      //   check = +prompt("nhap vao so  bat ki, neu  nhap dung thi dung lai");
+      //   if (check !== +number[i]) {
+      //     alert(`Number ${check} is not in the array`);
+      //     break;
+      //   } else {
+      //     alert(`Number ${check} is  in the array`);
+      //   }
+      // }
+      // c2
+      let number = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+
+      let input;
+      let check = false;
+
+      while (!check) {
+        input = prompt("Nhập vào số bất kỳ");
+
+        if (number.includes(input)) {
+          alert(`Number ${input} is in the array`);
+          check = true; // Dừng vòng lặp khi số hợp lệ được nhập
+        } else {
+          alert(`Number ${input} is not in the array`);
+        }
+      }
+    </script>
+  </body>
+</html>

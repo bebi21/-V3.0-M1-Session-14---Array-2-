@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Bài 4: Viết chương trình khởi tạo nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó. -->
+    <script>
+      let number = [];
+      let add;
+      do {
+        add = +prompt("nhap  vao  so,  nhap -1 de ket thuc");
+        if (add !== -1) {
+          number.push(add);
+        }
+      } while (add !== -1);
+      alert(number.reverse());
+      // reverse():  sẽ đảo ngược  1 mảng
+    </script>
+  </body>
+</html>

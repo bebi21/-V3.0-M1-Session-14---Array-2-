@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Bài 8: Viết chương trình khởi tạo nhập vào một mảng số nguyên gồm 10 phần tử. Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp. -->
+    <script>
+      let number = [];
+      let add;
+      do {
+        add = +prompt("nhap  vao so  nguyen  , khi nhap  0 thi  end");
+        if (add !== 0) {
+          number.push(add);
+        }
+      } while (add !== 0);
+      let change = number.sort(function (a, b) {
+        return b - a;
+      });
+      console.log(change.toString());
+    </script>
+  </body>
+</html>

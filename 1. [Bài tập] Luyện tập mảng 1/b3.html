@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Bài 3: Viết chương trình khởi tạo nhập vào một mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó và giá trị trung bình của các phần tử trong mảng. -->
+    <script>
+      let number = [];
+      let add;
+
+      do {
+        do {
+          add = +prompt("moi nhap  so , nhap  so  0 se dung");
+        } while (number.includes(add));
+        if (add != 0) {
+          number.push(add);
+        }
+      } while (add != 0);
+      let maxNumber = 0;
+      let resuil = 0;
+      for (let i = 0; i < number.length; i++) {
+        if (number[i] > maxNumber) {
+          maxNumber = number[i];
+        }
+        console.log(number[i]);
+        resuil = resuil + number[i];
+      }
+     
+      console.log(
+        `gia tri lon nhat la ${maxNumber}va gia tri  trung binh cac so trong mang la ${
+          resuil / number.length
+        }`
+      );
+      // let number = prompt("nhap so nganh  cach nhau  bang dau ,");
+      // let change = number.split(",");
+      // let maxNumber = 0;
+      // let resuil = 0;
+      // for (let i = 0; i < change.length; i++) {
+      //   if (change[i] > maxNumber) {
+      //     maxNumber = change[i];
+      //   }
+      //   console.log(change[i]);
+      //   resuil = resuil + +change[i];
+      // }
+      // console.log(resuil);
+      // console.log(
+      //   `gia tri lon nhat la ${maxNumber}va gia tri  trung binh cac so trong mang la ${
+      //     resuil / change.length
+      //   }`
+      // );
+    </script>
+  </body>
+</html>

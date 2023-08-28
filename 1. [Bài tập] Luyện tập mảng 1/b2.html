@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Bài 2: Viết chương trình khởi tạo nhập vào một mảng số nguyên gồm 10 phần tử khác nhau. Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.
+
+ -->
+    <script>
+      // .includes kiểm tra xem  các phần tử có trùng lặp ko  và trả về kết quả là true,  false
+      let number = [];
+      let add;
+      for (let i = 1; i <= 5; i++) {
+        do {
+          add = +prompt(`nhap so thu ${i}`);
+        } while (number.includes(add));
+        number.push(add);
+      }
+      console.log(number);
+      let maxNumber = 0;
+      let vitri;
+      for (let j = 0; j < number.length; j++) {
+        if (number[j] > maxNumber) {
+          maxNumber = number[j];
+          vitri = j;
+        }
+      }
+      console.log(`gia tri lon nhat la ${maxNumber} co  vi  tri la  ${vitri} `);
+
+      // let number = [];
+      // let add;
+      // for (let i = 1; i <= 5; i++) {
+      //   do {
+      //     add = +prompt(`nhap so thu ${i}`);
+      //   } while (number.includes(add));
+      //   number.push(add);
+      // }
+      // console.log(number);
+      // let number;
+      // let result;
+      // let i;
+      // do {
+      //   number = prompt("moi nhap  vao ngan cacxh  nhau  bang  dau  ,");
+      //   result = number.split(",");
+      //   for (i = 0; i < result.length; i++) {
+      //     if (result.includes(result[i]) == true) {
+      //       alert("ban da nhap  trung nhau moi  nhap lai");
+      //       break;
+      //     }
+      //   }
+      // } while (result.includes(result[i]));
+
+      // console.log(number);
+    </script>
+  </body>
+</html>
